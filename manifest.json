@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Web Scratch",
+  "description": "Simple Web Scraping Tool",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "index.png"
+  },
+  "icons": {
+    "16": "assets/icons/icon_16.png",
+    "32": "assets/icons/icon_32.png",
+    "48": "assets/icons/icon_48.png",
+    "128": "assets/icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "assets/scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "assets/scripts/content.js"
+      ]
+    }
+  ]
+}

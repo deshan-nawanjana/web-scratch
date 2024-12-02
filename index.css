@@ -1,0 +1,203 @@
+* {
+  font-family: "Ubuntu";
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.container {
+  display: none;
+}
+
+body.default .default-container {
+  display: flex;
+}
+
+body.preview .preview-container {
+  display: flex;
+}
+
+*::selection {
+  background-color: #FFF2;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #06c;
+}
+
+body.preview {
+  width: 100vw;
+  height: 100vh;
+}
+
+.preview-container {
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.preview-options {
+  border: 1px solid #FFF3;
+  border-collapse: collapse;
+  color: #FFF8;
+  margin: 20px;
+  flex-shrink: 0;
+  display: none;
+}
+
+.preview-options thead {
+  user-select: none;
+}
+
+.preview-options th,
+.preview-options td {
+  border: 1px solid #FFF3;
+  height: 30px;
+  padding: 0px 10px;
+  font-weight: 500;
+}
+
+.option-checkbox {
+  width: 50px;
+  text-align: center;
+}
+
+.option-key-value {
+  overflow: hidden;
+  line-break: anywhere;
+  white-space: pre-wrap;
+  height: 30px;
+  line-height: 30px;
+}
+
+.option-rename-input {
+  background-color: transparent;
+  color: #FFF8;
+  border: none;
+  height: 30px;
+  padding: 0px;
+  width: 100%;
+}
+
+.option-rename {
+  width: 40%;
+  max-width: 400px;
+  min-width: 220px;
+}
+
+.options-row[data-include="false"] {
+  opacity: 0.5;
+}
+
+.options-row[data-include="false"] * {
+  text-decoration: line-through;
+}
+
+.preview-code {
+  padding: 20px;
+  margin: 0px;
+  width: calc(100% - 40px);
+  flex-grow: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+  background-color: #181818;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#download {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  background-color: #06c;
+  color: #FFFE;
+  font-weight: 500;
+}
+
+#download:active {
+  background-color: #084a8d;
+}
+
+body.default {
+  width: 380px;
+  height: 240px;
+  user-select: none;
+}
+
+.default-container {
+  flex-direction: column;
+}
+
+.info-header {
+  background-color: #e99a00;
+  color: #000;
+  line-height: 60px;
+  padding: 0px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.info-content ol {
+  padding: 20px 38px;
+  margin: 0px;
+  color: #FFF6;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.info-footer {
+  background-color: #FFF2;
+  color: #000;
+  height: 60px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.info-footer-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFA;
+  line-height: 20px;
+}
+
+.info-footer-links {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  line-height: 20px;
+  color: #FFF3;
+  font-size: 10px;
+}
+
+.info-footer-links a {
+  color: #FFF8;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.info-footer-links a:hover {
+  text-decoration: underline;
+  color: #FFFA;
+}

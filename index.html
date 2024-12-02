@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- preload : fonts -->
+  <link rel="stylesheet" href="./assets/fonts/Ubuntu.css">
+  <link rel="preload" href="./assets/fonts/Ubuntu/Ubuntu-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/fonts/Ubuntu/Ubuntu-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <!-- style -->
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./assets/libraries/prism.css">
+  <!-- libraries -->
+  <script src="./assets/libraries/prism.js"></script>
+  <!-- script -->
+  <script src="./index.js" type="module" defer></script>
+  <!-- page title -->
+  <title>🐱 Scratched Content</title>
+</head>
+<body>
+  <!-- template : options row -->
+  <template id="options-row">
+    <tr class="options-row">
+      <td class="option-checkbox">
+        <input
+          type="checkbox"
+          class="option-include-input"
+          checked
+        />
+      </td>
+      <td class="option-key">
+        <div class="option-key-value"></div>
+      </td>
+      <td class="option-rename">
+        <input
+          type="text"
+          class="option-rename-input"
+          placeholder="Type your own key here..."
+        />
+      </td>
+    </tr>
+  </template>
+  <!-- preview window -->
+  <div class="container preview-container">
+    <table class="preview-options">
+      <thead>
+        <tr>
+          <th>
+            Include
+          </th>
+          <th>
+            Original Key
+          </th>
+          <th>
+            Renamed Key
+          </th>
+        </tr>
+      </thead>
+      <tbody id="options"></tbody>
+      <button id="download">
+        Export as JSON
+      </button>
+    </table>
+    <pre class="preview-code"></pre>
+  </div>
+  <!-- default popup -->
+  <div class="container default-container">
+    <div class="info-header">
+      Web Scratch Instructions
+    </div>
+    <div class="info-content">
+      <ol>
+        <li>
+          Go to a website
+        </li>
+        <li>
+          Right click on the element you want to scratch
+        </li>
+        <li>
+          Scratched content will appear on a popup
+        </li>
+        <li>
+          Modify the JSON as you wish
+        </li>
+        <li>
+          Click the export button
+        </li>
+      </ol>
+    </div>
+    <div class="info-footer">
+      <div class="info-footer-title">
+        Developed by Deshan Nawanjana
+      </div>
+      <div class="info-footer-links">
+        <a href="https://deshan.lk" target="_blank">
+          Deshan.lk
+        </a>
+        |
+        <a href="https://github.com/deshan-nawanjana" target="_blank">
+          GitHub
+        </a>
+        |
+        <a href="https://www.facebook.com/mr.dnjs" target="_blank">
+          Facebook
+        </a>
+        |
+        <a href="https://www.youtube.com/channel/UCfqOF8_UTa6LhaujoFETqlQ" target="_blank">
+          YouTube
+        </a>
+        |
+        <a href="https://www.linkedin.com/in/deshan-nawanjana/" target="_blank">
+          LinkedIn
+        </a>
+        |
+        <a href="mailto:deshan.uok@gmail.com" target="_blank">
+          Gmail
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
