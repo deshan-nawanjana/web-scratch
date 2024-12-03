@@ -123,7 +123,7 @@ const loadPreview = data => {
   // download button click event
   qs("#download").addEventListener("click", () => {
     // export latest data as file
-    exportScratchData(data, output)
+    exportScratchData()
   })
 }
 
@@ -161,9 +161,9 @@ const updateSnippet = (data, options) => {
 }
 
 // method to export output as a file
-const exportScratchData = data => {
+const exportScratchData = () => {
   // create data string
-  const text = JSON.stringify(data, null, 2)
+  const text = JSON.stringify(output, null, 2)
   // create blob
   const blob = new Blob([text], { type: "application/json" })
   // create download link
