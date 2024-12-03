@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Web Scratch",
-  "description": "Simple Web Scraping Tool",
+  "name": "Web Scratch: Simple Web Scraping Tool",
+  "description": "A powerful extension designed to simplify data collection from web pages.",
   "version": "1.0",
   "permissions": [
     "activeTab",
